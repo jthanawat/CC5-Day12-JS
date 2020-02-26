@@ -1,3 +1,4 @@
+// * Object methods *
 // let obj1 = {
 //     name: 'nat',
 //     sayHi() {
@@ -10,9 +11,8 @@
 
 // obj1.sayHi();
 
-//Exercise 
+//Exercise 1
 // ans. Error ให้ใส่ semi-colon
-
 let user = {
   name: "John",
   go: function () { alert(this.name) }
@@ -20,7 +20,7 @@ let user = {
 
 (user.go)()
 
-//Exercise
+//Exercise 2
 function makeUser() {
   return {
     name: "John",
@@ -34,9 +34,7 @@ let user = makeUser();
 
 alert(user.ref().name); // What's the result?
 
-
-//Exercise
-
+//Exercise 3
 let calculator = {
   read() {
     this.x = +prompt("Insert x number");
@@ -56,8 +54,7 @@ calculator.read();
 alert( calculator.sum() );
 alert( calculator.mul() );
 
-//Exercise
-
+//Exercise 4
 let ladder = {
   step: 0,
   up() {
@@ -83,6 +80,10 @@ ladder.up().up().down().showStep(); // 1
 
 //
 
+
+
+// * Constructor
+//Lab 1
 // let user = {
 //   name: 'Nat',
 //   isAdmin: false
@@ -105,6 +106,7 @@ ladder.up().up().down().showStep(); // 1
 // console.log(user);
 // console.log(user1);
 
+//Lab 2
 // function User(name) {
 //   this.name = name;
 
@@ -117,8 +119,7 @@ ladder.up().up().down().showStep(); // 1
 
 // kla.sayHi();
 
-//Exercise
-
+//Exercise 1
 function Calculator() {
 
   this.read = function() {
@@ -141,8 +142,8 @@ calculator.read();
 alert("sum=" + calculator.sum());
 alert("mul=" + calculator.mul());
 
-//Exercise
 
+//Exercise2
 function Accumulator(startingValue) {
   this.value = startingValue;
 
@@ -151,15 +152,9 @@ function Accumulator(startingValue) {
   }
 }
 
-
 let accumulator = new Accumulator(4);
 
 console.log(accumulator.value);
 accumulator.read();
 accumulator.read();
 alert(accumulator.value);
-
-
-//Exercise
-let num = 1.23456;
-alert( Math.floor(num * 100) / 100 );

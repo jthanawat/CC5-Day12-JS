@@ -1,3 +1,4 @@
+// * Object *
 // เพิ่มเติมใน class
 // let user = {
 //     name: "Thanawat",
@@ -5,46 +6,48 @@
 //     "computer skill": null
 // };
 
-// user.height = 160;
-// user.IsSingle = true;
-// console.log(user);
-// console.log(user["computer skill"]);
-// alert(user.name);
+user.height = 160;
+user.IsSingle = true;
+console.log(user);
+console.log(user["computer skill"]);
+alert(user.name);
 
-// delete user.name
-// console.log(user);
+delete user.name
+console.log(user);
+
 
 //Exercise 
-// let human = {};
+let human = {};
 
-// human.name = "Thanawat",
-// human.age = 24,
-// human.group = "Nat",
-// human.IsSingle = true,
-// human["Intelligent Score"] = 4
+human.name = "Thanawat",
+human.age = 24,
+human.group = "Nat",
+human.IsSingle = true,
+human["Intelligent Score"] = 4
 
-// console.log(human);
+console.log(human);
 
 
+
+// * Computed Properties * 
 //Exercise
+let obj = {};
+let key;
+let value;
 
-// let obj = {};
-// let key;
-// let value;
+while (key !== "stop" || value !== "stop") {
+  key = prompt("Enter key");
+  if (key == "stop") {
+    break;
+  }
+    value = prompt("Enter value")
+    if (value == "stop") {
+      break;
+    }
+  obj[key] = value;
+}
 
-// while (key !== "stop" || value !== "stop") {
-//   key = prompt("Enter key");
-//   if (key == "stop") {
-//     break;
-//   }
-//     value = prompt("Enter value")
-//     if (value == "stop") {
-//       break;
-//     }
-//   obj[key] = value;
-// }
-
-// console.log(obj);
+console.log(obj);
 
 // เสริม
 // let key = prompt("Key");
@@ -79,50 +82,49 @@
 
 
 // Exercise 2
+let fruit = {};
+let key;
+let value;
 
-// let fruit = {};
-// let key;
-// let value;
+while (true) {
+  key = prompt("Enter fruit's name");
 
-// while (true) {
-//   key = prompt("Enter fruit's name");
+  if (key == "stop") {
+    break;
+  }
 
-//   if (key == "stop") {
-//     break;
-//   }
+  value = Number(prompt("Enter fruit's amount"));
 
-//   value = Number(prompt("Enter fruit's amount"));
+  if (value > 1) {
+    fruit[key + "s"] = value;
+    console.log(fruit);
+  } else {
+    fruit[key] = value;
+    console.log(fruit);
+  }
+} 
 
-//   if (value > 1) {
-//     fruit[key + "s"] = value;
-//     console.log(fruit);
-//   } else {
-//     fruit[key] = value;
-//     console.log(fruit);
-//   }
-// } 
 
-// Exercise
+// * Cloning and merging *
+// Lab
+const obj = {
+  name: "thanawat",
+  age: 24,
+  height: 160,
+  weight: 46,
+}
 
-// const obj = {
-//   name: "thanawat",
-//   age: 24,
-//   height: 160,
-//   weight: 46,
-// }
+let clone = {}; //// Object.assign({}, obj);
 
-// let clone = {}; //// Object.assign({}, obj);
-
-// for (let key in obj) { 
-//   clone[key] = obj[key];
-// }
-// clone.name = "kla";
+for (let key in obj) { 
+  clone[key] = obj[key];
+}
+clone.name = "kla";
 
 // console.log(clone.name);
 
 
-// Exercise 
-
+// Exercise 1
 let obj = {};
 obj.name = "Sonter";
 obj.surname = "Pakorn";
@@ -130,8 +132,7 @@ obj.name = "Boy";
 delete obj.name;
 
 
-// Exercise 
-
+// Exercise 2
 function isEmpty(obj) {
   let isEmpty = true;
   for (let key in obj) {
@@ -139,24 +140,17 @@ function isEmpty(obj) {
   }
   return isEmpty;
 }
-//test
-let obj = {
 
-}
-
-// Exercise
+// Exercise 3
 // ans. ไม่ Error
-
 const user = {
   name: "John"
 };
-
 // does it work?
 user.name = "Pete";
 
 
-// Exercise
-
+// Exercise 4
 let salaries = {
   John: 100,
   Ann: 160,
@@ -172,9 +166,7 @@ let sum = 0;
 }
 console.log(sum(salaries))
 
-
-
-//Exercise
+//Exercise 5
 function multiplyNumeric(obj, times) {
   for (let key in obj) {
     if (typeof (obj[key]) == "number") {
@@ -194,7 +186,7 @@ console.log(multiplyNumberic(obj, 2));
 
 
 
-// Clone
+// Clone เพิ่มเติม
 const obj = {
   name: 'sonter',
   age: 18,
