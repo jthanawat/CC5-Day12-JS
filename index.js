@@ -1,3 +1,4 @@
+// * Arrow Function *
 // Exercise 
 // function ask(question, yes, no) {
 //     if (confirm(question)) yes()
@@ -22,6 +23,7 @@
 // );
 
 
+// * Callback Function *
 // function thanawat() {
 //     console.log('thanawat');
 //     return 0;
@@ -29,6 +31,7 @@
 
 // setTimeout(thanawat, 3000);
 // setTimeout(callback, millisecond);
+
 
 // function pow(x,n)
 // {
@@ -45,6 +48,7 @@
 // {
 //   alert(pow(x,n))
 // }
+
 
 // function pow(x, n) {
 //     let result = 1;
@@ -66,6 +70,8 @@
 //     alert(pow(x, n))
 // }
 
+
+//Additional In-class Exercise 
 // Exercise 1
 // function user(name1, BMI1, name2, BMI2) {
 //     if (BMI1 > BMI2) {
@@ -108,9 +114,6 @@
 // user(name1, BMI1, name2, BMI2);
 
 
-
-
-
 //Exercise 3
 // let A, B;
 // B = 0;
@@ -149,7 +152,7 @@
 // }
 
 
-// solution 3
+// Solution of Exercise 3
 // let max =  -infinity;
 // let input = -infinity;
 
@@ -163,7 +166,7 @@
 // console.log(max);
 
 
-// solution 4
+// Solution of Exercise 4
 // let max1 = -infinity;
 // let max2 = -infinity;
 // let input = -infinity;
